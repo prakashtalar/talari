@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Code Checkout') {
             steps {
-               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github_token', url: 'https://github.com/prakashtalar/talari.git']])
+               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'c9f3b495-e17a-4938-895f-a19a364cc3a9', url: 'https://github.com/prakashtalar/masterjnks.git']])
             }
         }
         stage('Building image') {
